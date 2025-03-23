@@ -45,6 +45,7 @@ internal static class SchoolFactory
             school.InschribeToExam(studentNumber, examNumber);
         }
 
+        // populate exam results
         for (var i = 0; i < 100; i++)
         {
             var studentIndex = rng.Next(0, inscribedStudents.Count);
