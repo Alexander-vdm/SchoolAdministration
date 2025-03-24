@@ -1,15 +1,15 @@
 ﻿namespace SchoolAdministration.Models;
 
-internal class ExamResult
+internal sealed class ExamResult
 {
-    public ExamResult(Exam exam, Student student, bool hasPassed)
+    public ExamResult(Course course, Student student, bool hasPassed)
     {
-        Exam = exam;
+        Course = course;
         Student = student;
         Result = hasPassed;
     }
 
-    public Exam Exam { get; set; }
+    public Course Course { get; set; }
 
     public Student Student { get; set; }
 

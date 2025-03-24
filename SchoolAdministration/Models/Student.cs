@@ -1,8 +1,8 @@
 ﻿namespace SchoolAdministration.Models;
 
-internal class Student : Person
+internal sealed class Student : Person
 {
-    private readonly List<Exam> _exams = [];
+    private readonly List<Course> _courses = [];
     private readonly List<ExamResult> _examResults = [];
 
     public Student(Guid studentNumber)
@@ -12,27 +12,27 @@ internal class Student : Person
 
     public Guid StudentNumber { get; set; }
 
-    public IReadOnlyList<Exam> Exams => _exams.AsReadOnly();
+    public IReadOnlyList<Course> Courses => _courses.AsReadOnly();
 
     public IReadOnlyList<ExamResult> ExamResults => _examResults.AsReadOnly();
 
-    public void AddExam(Exam exam)
+    public void AddCourse(Course exam)
     {
-        if (!_exams.Any(x => x.ExamNumber == exam.ExamNumber))
+        if (!_courses.Any(x => x.CourseNumber == exam.CourseNumber))
         {
-            _exams.Add(exam);
+            _courses.Add(exam);
         }
     }
 
-    public void ReceiveExamResult(Guid examNumber, bool hasPassed)
+    public void ReceiveExamResult(Guid courseNumber, bool hasPassed)
     {
-        var exam = _exams.Single(x => x.ExamNumber == examNumber);
-        var examResult = new ExamResult(exam, this, hasPassed);
+        var course = _courses.Single(x => x.CourseNumber == courseNumber);
+        var examResult = new ExamResult(course, this, hasPassed);
         _examResults.Add(examResult);
     }
 
-    public Exam? TryGetExam(Guid examNumber)
+    public Course? TryGetCourse(Guid courseNumber)
     {
-        return _exams.SingleOrDefault(x => x.ExamNumber == examNumber);
+        return _courses.SingleOrDefault(x => x.CourseNumber == courseNumber);
     }
 }

@@ -10,16 +10,23 @@ internal static class SchoolFactory
     {
         var currentDirectory = Directory.GetCurrentDirectory();
         var testFilesPath = Path.Combine(currentDirectory, "DemoFiles");
-        var examsPath = Path.Combine(testFilesPath, "exams.json");
+        var coursesPath = Path.Combine(testFilesPath, "courses.json");
         var peoplePath = Path.Combine(testFilesPath, "people.json");
 
-        var examsJson = File.ReadAllText(examsPath);
-        var exams = JsonSerializer.Deserialize<List<Exam>>(examsJson)!;
+        var coursesJson = File.ReadAllText(coursesPath);
+        var courses = JsonSerializer.Deserialize<List<Course>>(coursesJson)!;
 
         var peopleJson = File.ReadAllText(peoplePath);
         var people = JsonSerializer.Deserialize<List<Person>>(peopleJson)!;
 
-        var school = new School(exams);
+        var school = new School(courses);
+
+
+
+
+
+
+
         var rng = new Random();
 
         var inscribedStudents = new List<Student>();
@@ -27,32 +34,32 @@ internal static class SchoolFactory
         // Inscribe students
         foreach (var person in people)
         {
-            var examIndex = rng.Next(0, exams.Count);
-            var exam = exams[examIndex];
-            var student = school.InscribeStudent(person, exam.ExamNumber);
+            var courseIndex = rng.Next(0, courses.Count);
+            var course = courses[courseIndex];
+            var student = school.InscribeStudent(person, course.CourseNumber);
             inscribedStudents.Add(student);
         }
 
-        // student can inscribe to multiple exams
+        // student can inscribe to multiple courses
         for (var i = 0; i < 100; i++)
         {
             var studentIndex = rng.Next(0, inscribedStudents.Count);
-            var examIndex = rng.Next(0, exams.Count);
+            var courseIndex = rng.Next(0, courses.Count);
 
             var studentNumber = inscribedStudents[studentIndex].StudentNumber;
-            var examNumber = exams[examIndex].ExamNumber;
+            var courseNumber = courses[courseIndex].CourseNumber;
 
-            school.InschribeToExam(studentNumber, examNumber);
+            school.InschribeToCourse(studentNumber, courseNumber);
         }
 
         // populate exam results
         for (var i = 0; i < 100; i++)
         {
             var studentIndex = rng.Next(0, inscribedStudents.Count);
-            var examIndex = rng.Next(0, exams.Count);
+            var examIndex = rng.Next(0, courses.Count);
 
             var studentNumber = inscribedStudents[studentIndex].StudentNumber;
-            var examNumber = exams[examIndex].ExamNumber;
+            var examNumber = courses[examIndex].CourseNumber;
 
             var result = rng.NextBoolean();
 

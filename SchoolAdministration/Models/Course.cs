@@ -1,12 +1,12 @@
 ﻿namespace SchoolAdministration.Models;
 
-internal class Exam
+internal sealed class Course
 {
     private readonly List<Student> _students = [];
 
     private readonly List<ExamResult> _examResults = [];
 
-    public required Guid ExamNumber { get; set; }
+    public required Guid CourseNumber { get; set; }
 
     public required string Name { get; set; }
 

@@ -1,27 +1,18 @@
 ﻿using SchoolAdministration;
 
+// Guids
+var newGuid = Guid.NewGuid();
+var guid = Guid.Parse("e1a3b8c9-1234-4d56-9a1b-2c3d4e5f6789");
+var guid2 = new Guid("e1a3b8c9-1234-4d56-9a1b-2c3d4e5f6789");
 // Enums
 
-// Guids
+// See ExamResultEnum
 
 // OOP and DDD
 
 // Exceptions
 
-
 var school = SchoolFactory.CreateSchool();
 
-// This does not work.  
-var studentsWhoFailedAllExams = school.Students
-    .Where(x => x.ExamResults.All(y => !y.Result))
-    .ToList();
-
-var studentsWhoSucceededAllExams = school.Students
-    .Where(x => x.ExamResults.All(y => y.Result))
-    .ToList();
-
-var studentsWithDifferentResults = school.Students
-    .Where(x => !x.ExamResults.All(y => y.Result) && !x.ExamResults.All(y => !y.Result))
-    .ToList();
 
 Console.ReadLine();

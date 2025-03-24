@@ -1,23 +1,23 @@
 ﻿namespace SchoolAdministration.Models;
 
-internal class School
+internal sealed class School
 {
     private readonly List<Student> _students = [];
 
-    private readonly List<Exam> _exams = [];
+    private readonly List<Course> _courses = [];
 
-    public School(List<Exam> exams)
+    public School(List<Course> courses)
     {
-        _exams = exams;
+        _courses = courses;
     }
 
-    public IReadOnlyList<Exam> Exams => _exams.AsReadOnly();
+    public IReadOnlyList<Course> Courses => _courses.AsReadOnly();
 
     public IReadOnlyList<Student> Students => _students.AsReadOnly();
 
-    public Student InscribeStudent(Person person, Guid examNumber)
+    public Student InscribeStudent(Person person, Guid courseNumber)
     {
-        var exam = _exams.Single(x => x.ExamNumber == examNumber);
+        var course = _courses.Single(x => x.CourseNumber == courseNumber);
 
         var student = new Student(Guid.NewGuid())
         {
@@ -25,37 +25,37 @@ internal class School
             FirstName = person.FirstName
         };
 
-        student.AddExam(exam);
-        exam.AddStudent(student);
+        student.AddCourse(course);
+        course.AddStudent(student);
 
         _students.Add(student);
 
         return student;
     }
 
-    public void InschribeToExam(Guid studentNumber, Guid examNumber)
+    public void InschribeToCourse(Guid studentNumber, Guid courseNumber)
     {
         var student = _students.Single(x => x.StudentNumber == studentNumber);
-        var exam = _exams.Single(x => x.ExamNumber == examNumber);
+        var course = _courses.Single(x => x.CourseNumber == courseNumber);
 
-        student.AddExam(exam);
-        exam.AddStudent(student);
+        student.AddCourse(course);
+        course.AddStudent(student);
     }
 
-    public void TrySetExamResult(Guid studentNumber, Guid examNumber, bool hasPassed)
+    public void TrySetExamResult(Guid studentNumber, Guid courseNumber, bool hasPassed)
     {
         var student = _students.Single(x => x.StudentNumber == studentNumber);
-        var exam = student.TryGetExam(examNumber);
-        if (exam is null)
+        var course = student.TryGetCourse(courseNumber);
+        if (course is null)
         {
-            var existingExam = _exams.Single(x => x.ExamNumber == examNumber);
+            var existingExam = _courses.Single(x => x.CourseNumber == courseNumber);
             Console.WriteLine($"Could not find exam {existingExam} for student {student}");
             return;
         }
 
-        var examResult = new ExamResult(exam, student, hasPassed);
+        var examResult = new ExamResult(course, student, hasPassed);
 
-        student.ReceiveExamResult(examNumber, hasPassed);
-        exam.ReportExamResult(student, hasPassed);
+        student.ReceiveExamResult(courseNumber, hasPassed);
+        course.ReportExamResult(student, hasPassed);
     }
 }
