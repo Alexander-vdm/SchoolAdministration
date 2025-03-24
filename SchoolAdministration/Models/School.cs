@@ -13,9 +13,10 @@ internal sealed class School
         _courses = courses;
     }
 
+    public IReadOnlyList<Student> Students => _students.AsReadOnly();
+
     public IReadOnlyList<Course> Courses => _courses.AsReadOnly();
 
-    public IReadOnlyList<Student> Students => _students.AsReadOnly();
 
     public Student InscribeStudent(Person person, Guid courseNumber)
     {

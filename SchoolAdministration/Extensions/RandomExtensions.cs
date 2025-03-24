@@ -1,9 +1,15 @@
-﻿namespace SchoolAdministration.Extensions;
+﻿using SchoolAdministration.Enums;
+
+namespace SchoolAdministration.Extensions;
 
 internal static class RandomExtensions
 {
-    public static bool NextBoolean(this Random rng)
+    public static ExamResultEnum NextExamResultEnum (this Random rng)
     {
-        return rng.Next(0, 2) != 0;
+        var values = Enum.GetValues<ExamResultEnum>();
+        var index = rng.Next(0, values.Length);
+        var value = values[index];
+
+        return value;
     }
 }

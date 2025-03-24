@@ -4,6 +4,6 @@ public enum ExamResultEnum
 {
     Inscribed,
     Succeeded,
-    Delibarated,
+    Deliberated,
     Failed
 }

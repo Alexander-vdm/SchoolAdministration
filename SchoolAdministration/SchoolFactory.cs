@@ -18,15 +18,9 @@ internal static class SchoolFactory
 
         var peopleJson = File.ReadAllText(peoplePath);
         var people = JsonSerializer.Deserialize<List<Person>>(peopleJson)!;
-
+        
         var school = new School(courses);
-
-
-
-
-
-
-
+        
         var rng = new Random();
 
         var inscribedStudents = new List<Student>();
@@ -61,7 +55,7 @@ internal static class SchoolFactory
             var studentNumber = inscribedStudents[studentIndex].StudentNumber;
             var examNumber = courses[examIndex].CourseNumber;
 
-            var result = rng.NextBoolean();
+            var result = rng.NextExamResultEnum();
 
             school.TrySetExamResult(studentNumber, examNumber, result);
         }
