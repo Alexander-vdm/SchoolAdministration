@@ -1,4 +1,6 @@
-﻿namespace SchoolAdministration.Models;
+﻿using SchoolAdministration.Enums;
+
+namespace SchoolAdministration.Models;
 
 internal sealed class Student : Person
 {
@@ -24,10 +26,10 @@ internal sealed class Student : Person
         }
     }
 
-    public void ReceiveExamResult(Guid courseNumber, bool hasPassed)
+    public void ReceiveExamResult(Guid courseNumber, ExamResultEnum examResultEnum)
     {
         var course = _courses.Single(x => x.CourseNumber == courseNumber);
-        var examResult = new ExamResult(course, this, hasPassed);
+        var examResult = new ExamResult(course, this, examResultEnum);
         _examResults.Add(examResult);
     }
 

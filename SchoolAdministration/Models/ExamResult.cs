@@ -1,17 +1,19 @@
-﻿namespace SchoolAdministration.Models;
+﻿using SchoolAdministration.Enums;
+
+namespace SchoolAdministration.Models;
 
 internal sealed class ExamResult
 {
-    public ExamResult(Course course, Student student, bool hasPassed)
+    public ExamResult(Course course, Student student, ExamResultEnum examResultEnum)
     {
         Course = course;
         Student = student;
-        Result = hasPassed;
+        Result = examResultEnum;
     }
 
     public Course Course { get; set; }
 
     public Student Student { get; set; }
 
-    public bool Result { get; set; }
+    public ExamResultEnum Result { get; set; }
 }

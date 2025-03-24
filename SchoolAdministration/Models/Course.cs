@@ -1,4 +1,6 @@
-﻿namespace SchoolAdministration.Models;
+﻿using SchoolAdministration.Enums;
+
+namespace SchoolAdministration.Models;
 
 internal sealed class Course
 {
@@ -22,9 +24,9 @@ internal sealed class Course
         }
     }
 
-    public void ReportExamResult(Student student, bool hasPassed)
+    public void ReportExamResult(Student student, ExamResultEnum examResultEnum)
     {
-        var examResult = new ExamResult(this, student, hasPassed);
+        var examResult = new ExamResult(this, student, examResultEnum);
         _examResults.Add(examResult);
     }
 
