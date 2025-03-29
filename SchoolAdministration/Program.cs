@@ -1,11 +1,13 @@
 ﻿using SchoolAdministration;
 
-List<int> list = [ 1, 2, 3 ];
-var first = list[ 0 ];
-// OOP and DDD,
+// OOP and DDD
 
 // Exceptions
 
 var school = SchoolFactory.CreateSchool();
 
 Console.ReadLine();
+
+string s;
+
+// 2425 MAT 2 A

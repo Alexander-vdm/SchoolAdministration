@@ -41,9 +41,9 @@ internal static class SchoolFactory
             var courseIndex = rng.Next(0, courses.Count);
 
             var studentNumber = inscribedStudents[studentIndex].StudentNumber;
-            var courseNumber = courses[courseIndex].Id;
+            var courseId = courses[courseIndex].Id;
 
-            school.InschribeToCourse(studentNumber, courseNumber);
+            school.InschribeToCourse(studentNumber, courseId);
         }
 
         // populate exam results

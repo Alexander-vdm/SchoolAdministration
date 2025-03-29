@@ -26,15 +26,15 @@ internal sealed class Student : Person
         }
     }
 
-    public void ReceiveExamResult(Guid courseNumber, ExamResultEnum examResultEnum)
+    public void ReceiveExamResult(Guid courseId, ExamResultEnum examResultEnum)
     {
-        var course = _courses.Single(x => x.Id == courseNumber);
+        var course = _courses.Single(x => x.Id == courseId);
         var examResult = new ExamResult(course, this, examResultEnum);
         _examResults.Add(examResult);
     }
 
-    public Course? TryGetCourse(Guid courseNumber)
+    public Course? TryGetCourse(Guid courseId)
     {
-        return _courses.SingleOrDefault(x => x.Id == courseNumber);
+        return _courses.SingleOrDefault(x => x.Id == courseId);
     }
 }
