@@ -4,10 +4,18 @@
 
 // Exceptions
 
+
+
+
+
 var school = SchoolFactory.CreateSchool();
 
 Console.ReadLine();
 
-string s;
 
-// 2425 MAT 2 A
+class StudentAlreadyInscribedException : Exception
+{
+    public StudentAlreadyInscribedException() : base("Student is already inscribed!")
+    {
+    }
+}

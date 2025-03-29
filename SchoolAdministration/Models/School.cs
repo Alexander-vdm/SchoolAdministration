@@ -22,7 +22,8 @@ internal sealed class School
     {
         var course = _courses.Single(x => x.Id == courseId);
 
-        var student = new Student(Guid.NewGuid())
+        var studentNumber = Guid.NewGuid();
+        var student = new Student(studentNumber)
         {
             FamilyName = person.FamilyName,
             FirstName = person.FirstName
