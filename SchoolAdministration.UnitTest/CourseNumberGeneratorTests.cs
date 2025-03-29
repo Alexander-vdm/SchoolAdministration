@@ -17,12 +17,11 @@ public class CourseNumberGeneratorTests
         DateOnly startDate = new DateOnly(2024, 9, 1);
         string courseName = "Mathematics";
         ushort level = 3;
-        string className = "B";
-        // Expected: startYear = "23", endYear = "24", code = "MAT", level = 3, className = "B"
+        char classCode = 'B';
 
         string expected = "2425-MAT-3B";
         // Act
-        string result = _sut.GenerateCourseNumber(startDate, courseName, level, className);
+        string result = _sut.GenerateCourseNumber(startDate, courseName, level, classCode);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -38,10 +37,10 @@ public class CourseNumberGeneratorTests
         DateOnly invalidStartDate = new DateOnly(2021, 12, 31);
         string courseName = "History";
         ushort level = 2;
-        string className = "A";
+        char classCode = 'A';
 
         // Act
-        _sut.GenerateCourseNumber(invalidStartDate, courseName, level, className);
+        _sut.GenerateCourseNumber(invalidStartDate, courseName, level, classCode);
 
         // Assert is handled by ExpectedException
     }
@@ -51,13 +50,13 @@ public class CourseNumberGeneratorTests
     public void GenerateCourseNumber_CourseNameTooShort_ThrowsArgumentException()
     {
         // Arrange
-        DateOnly startDate = new DateOnly(2023, 9, 1);
+        DateOnly startDate = new DateOnly(2024, 9, 1);
         string shortCourseName = "AB"; // less than 3 letters
         ushort level = 2;
-        string className = "A";
+        char classCode = 'A';
 
         // Act
-        _sut.GenerateCourseNumber(startDate, shortCourseName, level, className);
+        _sut.GenerateCourseNumber(startDate, shortCourseName, level, classCode);
     }
 
     [TestMethod]
@@ -65,26 +64,26 @@ public class CourseNumberGeneratorTests
     public void GenerateCourseNumber_LevelOutOfRange_ThrowsArgumentException()
     {
         // Arrange
-        DateOnly startDate = new DateOnly(2023, 9, 1);
+        DateOnly startDate = new DateOnly(2024, 9, 1);
         string courseName = "History";
         ushort invalidLevel = 6; // level must be between 1 and 5
-        string className = "A";
+        char classCode = 'A';
 
         // Act
-        _sut.GenerateCourseNumber(startDate, courseName, invalidLevel, className);
+        _sut.GenerateCourseNumber(startDate, courseName, invalidLevel, classCode);
     }
 
     [TestMethod]
     [ExpectedException(typeof(ArgumentException))]
-    public void GenerateCourseNumber_InvalidClassName_ThrowsArgumentException()
+    public void GenerateCourseNumber_InvalidClassCode_ThrowsArgumentException()
     {
         // Arrange
-        DateOnly startDate = new DateOnly(2023, 9, 1);
+        DateOnly startDate = new DateOnly(2024, 9, 1);
         string courseName = "History";
         ushort level = 2;
-        string invalidClassName = "D"; // allowed values are "A", "B", or "C"
+        char invalidclassCode = 'D'; // allowed values are "A", "B", or "C"
 
         // Act
-        _sut.GenerateCourseNumber(startDate, courseName, level, invalidClassName);
+        _sut.GenerateCourseNumber(startDate, courseName, level, invalidclassCode);
     }
 }
