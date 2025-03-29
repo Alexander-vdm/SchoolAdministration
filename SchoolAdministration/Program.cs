@@ -1,6 +1,8 @@
 ﻿using SchoolAdministration;
 
-// OOP and DDD
+List<int> list = [ 1, 2, 3 ];
+var first = list[ 0 ];
+// OOP and DDD,
 
 // Exceptions
 

@@ -8,7 +8,7 @@ internal sealed class Course
 
     private readonly List<ExamResult> _examResults = [];
 
-    public required Guid CourseNumber { get; set; }
+    public required Guid Id { get; set; }
 
     public required string Name { get; set; }
 

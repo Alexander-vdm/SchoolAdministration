@@ -30,7 +30,7 @@ internal static class SchoolFactory
         {
             var courseIndex = rng.Next(0, courses.Count);
             var course = courses[courseIndex];
-            var student = school.InscribeStudent(person, course.CourseNumber);
+            var student = school.InscribeStudent(person, course.Id);
             inscribedStudents.Add(student);
         }
 
@@ -41,7 +41,7 @@ internal static class SchoolFactory
             var courseIndex = rng.Next(0, courses.Count);
 
             var studentNumber = inscribedStudents[studentIndex].StudentNumber;
-            var courseNumber = courses[courseIndex].CourseNumber;
+            var courseNumber = courses[courseIndex].Id;
 
             school.InschribeToCourse(studentNumber, courseNumber);
         }
@@ -53,7 +53,7 @@ internal static class SchoolFactory
             var examIndex = rng.Next(0, courses.Count);
 
             var studentNumber = inscribedStudents[studentIndex].StudentNumber;
-            var examNumber = courses[examIndex].CourseNumber;
+            var examNumber = courses[examIndex].Id;
 
             var result = rng.NextExamResultEnum();
 
@@ -62,4 +62,5 @@ internal static class SchoolFactory
 
         return school;
     }
+
 }

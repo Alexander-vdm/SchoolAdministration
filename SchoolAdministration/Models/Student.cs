@@ -20,7 +20,7 @@ internal sealed class Student : Person
 
     public void AddCourse(Course exam)
     {
-        if (!_courses.Any(x => x.CourseNumber == exam.CourseNumber))
+        if (!_courses.Any(x => x.Id == exam.Id))
         {
             _courses.Add(exam);
         }
@@ -28,13 +28,13 @@ internal sealed class Student : Person
 
     public void ReceiveExamResult(Guid courseNumber, ExamResultEnum examResultEnum)
     {
-        var course = _courses.Single(x => x.CourseNumber == courseNumber);
+        var course = _courses.Single(x => x.Id == courseNumber);
         var examResult = new ExamResult(course, this, examResultEnum);
         _examResults.Add(examResult);
     }
 
     public Course? TryGetCourse(Guid courseNumber)
     {
-        return _courses.SingleOrDefault(x => x.CourseNumber == courseNumber);
+        return _courses.SingleOrDefault(x => x.Id == courseNumber);
     }
 }

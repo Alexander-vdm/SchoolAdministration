@@ -20,7 +20,7 @@ internal sealed class School
 
     public Student InscribeStudent(Person person, Guid courseNumber)
     {
-        var course = _courses.Single(x => x.CourseNumber == courseNumber);
+        var course = _courses.Single(x => x.Id == courseNumber);
 
         var student = new Student(Guid.NewGuid())
         {
@@ -39,7 +39,7 @@ internal sealed class School
     public void InschribeToCourse(Guid studentNumber, Guid courseNumber)
     {
         var student = _students.Single(x => x.StudentNumber == studentNumber);
-        var course = _courses.Single(x => x.CourseNumber == courseNumber);
+        var course = _courses.Single(x => x.Id == courseNumber);
 
         student.AddCourse(course);
         course.AddStudent(student);
@@ -51,7 +51,7 @@ internal sealed class School
         var course = student.TryGetCourse(courseNumber);
         if (course is null)
         {
-            var existingExam = _courses.Single(x => x.CourseNumber == courseNumber);
+            var existingExam = _courses.Single(x => x.Id == courseNumber);
             Console.WriteLine($"Could not find exam {existingExam} for student {student}");
             return;
         }
