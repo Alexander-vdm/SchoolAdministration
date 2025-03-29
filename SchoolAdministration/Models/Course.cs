@@ -10,6 +10,8 @@ internal sealed class Course
 
     public required Guid Id { get; set; }
 
+    public string? CourseNumber { get; set; }
+
     public required string Name { get; set; }
 
     public IReadOnlyList<Student> Students => _students.AsReadOnly();
