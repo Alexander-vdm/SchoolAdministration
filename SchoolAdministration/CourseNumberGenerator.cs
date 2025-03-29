@@ -16,7 +16,7 @@ namespace SchoolAdministration
             string endYear = startDate.AddYears(1).ToString("yy");
             string code = courseName.Substring(0, 3).ToUpper();
 
-            string courseNumber = $"{startYear}{endYear}{code}{level}{className}";
+            string courseNumber = $"{startYear}{endYear}-{code}-{level}{className}";
             return courseNumber;
             
         }
