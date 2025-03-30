@@ -20,6 +20,7 @@ public class CourseNumberGeneratorTests
         char classCode = 'B';
 
         string expected = "2425-MAT-3B";
+
         // Act
         string result = _sut.GenerateCourseNumber(startDate, courseName, level, classCode);
 
@@ -32,8 +33,6 @@ public class CourseNumberGeneratorTests
     public void GenerateCourseNumber_StartDateBeforeAllowed_ThrowsArgumentException()
     {
         // Arrange
-        // Assuming the rule is: startDate must be >= Jan 1 of last year.
-        // If today is 2023, a start date in 2021 is invalid.
         DateOnly invalidStartDate = new DateOnly(2021, 12, 31);
         string courseName = "History";
         ushort level = 2;
@@ -41,8 +40,6 @@ public class CourseNumberGeneratorTests
 
         // Act
         _sut.GenerateCourseNumber(invalidStartDate, courseName, level, classCode);
-
-        // Assert is handled by ExpectedException
     }
 
     [TestMethod]
@@ -51,7 +48,7 @@ public class CourseNumberGeneratorTests
     {
         // Arrange
         DateOnly startDate = new DateOnly(2024, 9, 1);
-        string shortCourseName = "AB"; // less than 3 letters
+        string shortCourseName = "AB"; 
         ushort level = 2;
         char classCode = 'A';
 
@@ -66,7 +63,7 @@ public class CourseNumberGeneratorTests
         // Arrange
         DateOnly startDate = new DateOnly(2024, 9, 1);
         string courseName = "History";
-        ushort invalidLevel = 6; // level must be between 1 and 5
+        ushort invalidLevel = 6;
         char classCode = 'A';
 
         // Act
@@ -81,7 +78,7 @@ public class CourseNumberGeneratorTests
         DateOnly startDate = new DateOnly(2024, 9, 1);
         string courseName = "History";
         ushort level = 2;
-        char invalidclassCode = 'D'; // allowed values are "A", "B", or "C"
+        char invalidclassCode = 'D';
 
         // Act
         _sut.GenerateCourseNumber(startDate, courseName, level, invalidclassCode);
