@@ -1,0 +1,906 @@
+{
+  "$id": "1",
+  "_students": [
+    {
+      "$id": "S1",
+      "Id": "00000000-0000-0000-0000-000000000001",
+      "FirstName": "Alice",
+      "FamilyName": "Smith",
+      "_courses": [ { "$ref": "C1" } ],
+      "_classRooms": [ { "$ref": "R1" } ],
+      "_examResults": [ { "$ref": "E1" } ]
+    },
+    {
+      "$id": "S2",
+      "Id": "00000000-0000-0000-0000-000000000002",
+      "FirstName": "Bob",
+      "FamilyName": "Johnson",
+      "_courses": [ { "$ref": "C1" } ],
+      "_classRooms": [ { "$ref": "R1" } ],
+      "_examResults": [ { "$ref": "E2" } ]
+    },
+    {
+      "$id": "S3",
+      "Id": "00000000-0000-0000-0000-000000000003",
+      "FirstName": "Charlie",
+      "FamilyName": "Brown",
+      "_courses": [ { "$ref": "C1" } ],
+      "_classRooms": [ { "$ref": "R1" } ],
+      "_examResults": [ { "$ref": "E3" } ]
+    },
+    {
+      "$id": "S4",
+      "Id": "00000000-0000-0000-0000-000000000004",
+      "FirstName": "David",
+      "FamilyName": "Wilson",
+      "_courses": [ { "$ref": "C1" } ],
+      "_classRooms": [ { "$ref": "R1" } ],
+      "_examResults": [ { "$ref": "E4" } ]
+    },
+    {
+      "$id": "S5",
+      "Id": "00000000-0000-0000-0000-000000000005",
+      "FirstName": "Emma",
+      "FamilyName": "Davis",
+      "_courses": [ { "$ref": "C1" } ],
+      "_classRooms": [ { "$ref": "R1" } ],
+      "_examResults": [ { "$ref": "E5" } ]
+    },
+    {
+      "$id": "S6",
+      "Id": "00000000-0000-0000-0000-000000000006",
+      "FirstName": "Fiona",
+      "FamilyName": "Miller",
+      "_courses": [ { "$ref": "C1" } ],
+      "_classRooms": [ { "$ref": "R1" } ],
+      "_examResults": [ { "$ref": "E6" } ]
+    },
+    {
+      "$id": "S7",
+      "Id": "00000000-0000-0000-0000-000000000007",
+      "FirstName": "George",
+      "FamilyName": "Taylor",
+      "_courses": [ { "$ref": "C1" } ],
+      "_classRooms": [ { "$ref": "R1" } ],
+      "_examResults": [ { "$ref": "E7" } ]
+    },
+    {
+      "$id": "S8",
+      "Id": "00000000-0000-0000-0000-000000000008",
+      "FirstName": "Hannah",
+      "FamilyName": "Anderson",
+      "_courses": [ { "$ref": "C1" } ],
+      "_classRooms": [ { "$ref": "R1" } ],
+      "_examResults": [ { "$ref": "E8" } ]
+    },
+    {
+      "$id": "S9",
+      "Id": "00000000-0000-0000-0000-000000000009",
+      "FirstName": "Ian",
+      "FamilyName": "Thomas",
+      "_courses": [ { "$ref": "C1" } ],
+      "_classRooms": [ { "$ref": "R1" } ],
+      "_examResults": [ { "$ref": "E9" } ]
+    },
+    {
+      "$id": "S10",
+      "Id": "00000000-0000-0000-0000-00000000000A",
+      "FirstName": "Julia",
+      "FamilyName": "Jackson",
+      "_courses": [ { "$ref": "C1" } ],
+      "_classRooms": [ { "$ref": "R1" } ],
+      "_examResults": [ { "$ref": "E10" } ]
+    },
+
+    {
+      "$id": "S11",
+      "Id": "00000000-0000-0000-0000-00000000000B",
+      "FirstName": "Kevin",
+      "FamilyName": "White",
+      "_courses": [ { "$ref": "C2" } ],
+      "_classRooms": [ { "$ref": "R2" } ],
+      "_examResults": [ { "$ref": "E11" } ]
+    },
+    {
+      "$id": "S12",
+      "Id": "00000000-0000-0000-0000-00000000000C",
+      "FirstName": "Laura",
+      "FamilyName": "Harris",
+      "_courses": [ { "$ref": "C2" } ],
+      "_classRooms": [ { "$ref": "R2" } ],
+      "_examResults": [ { "$ref": "E12" } ]
+    },
+    {
+      "$id": "S13",
+      "Id": "00000000-0000-0000-0000-00000000000D",
+      "FirstName": "Michael",
+      "FamilyName": "Martin",
+      "_courses": [ { "$ref": "C2" } ],
+      "_classRooms": [ { "$ref": "R2" } ],
+      "_examResults": [ { "$ref": "E13" } ]
+    },
+    {
+      "$id": "S14",
+      "Id": "00000000-0000-0000-0000-00000000000E",
+      "FirstName": "Nina",
+      "FamilyName": "Thompson",
+      "_courses": [ { "$ref": "C2" } ],
+      "_classRooms": [ { "$ref": "R2" } ],
+      "_examResults": [ { "$ref": "E14" } ]
+    },
+    {
+      "$id": "S15",
+      "Id": "00000000-0000-0000-0000-00000000000F",
+      "FirstName": "Oliver",
+      "FamilyName": "Garcia",
+      "_courses": [ { "$ref": "C2" } ],
+      "_classRooms": [ { "$ref": "R2" } ],
+      "_examResults": [ { "$ref": "E15" } ]
+    },
+    {
+      "$id": "S16",
+      "Id": "00000000-0000-0000-0000-000000000010",
+      "FirstName": "Pamela",
+      "FamilyName": "Robinson",
+      "_courses": [ { "$ref": "C2" } ],
+      "_classRooms": [ { "$ref": "R2" } ],
+      "_examResults": [ { "$ref": "E16" } ]
+    },
+    {
+      "$id": "S17",
+      "Id": "00000000-0000-0000-0000-000000000011",
+      "FirstName": "Quentin",
+      "FamilyName": "Clark",
+      "_courses": [ { "$ref": "C2" } ],
+      "_classRooms": [ { "$ref": "R2" } ],
+      "_examResults": [ { "$ref": "E17" } ]
+    },
+    {
+      "$id": "S18",
+      "Id": "00000000-0000-0000-0000-000000000012",
+      "FirstName": "Rachel",
+      "FamilyName": "Lewis",
+      "_courses": [ { "$ref": "C2" } ],
+      "_classRooms": [ { "$ref": "R2" } ],
+      "_examResults": [ { "$ref": "E18" } ]
+    },
+    {
+      "$id": "S19",
+      "Id": "00000000-0000-0000-0000-000000000013",
+      "FirstName": "Steven",
+      "FamilyName": "Lee",
+      "_courses": [ { "$ref": "C2" } ],
+      "_classRooms": [ { "$ref": "R2" } ],
+      "_examResults": [ { "$ref": "E19" } ]
+    },
+    {
+      "$id": "S20",
+      "Id": "00000000-0000-0000-0000-000000000014",
+      "FirstName": "Tina",
+      "FamilyName": "Walker",
+      "_courses": [ { "$ref": "C2" } ],
+      "_classRooms": [ { "$ref": "R2" } ],
+      "_examResults": [ { "$ref": "E20" } ]
+    },
+
+    {
+      "$id": "S21",
+      "Id": "00000000-0000-0000-0000-000000000015",
+      "FirstName": "Ulysses",
+      "FamilyName": "Hall",
+      "_courses": [ { "$ref": "C3" } ],
+      "_classRooms": [ { "$ref": "R3" } ],
+      "_examResults": [ { "$ref": "E21" } ]
+    },
+    {
+      "$id": "S22",
+      "Id": "00000000-0000-0000-0000-000000000016",
+      "FirstName": "Victoria",
+      "FamilyName": "Allen",
+      "_courses": [ { "$ref": "C3" } ],
+      "_classRooms": [ { "$ref": "R3" } ],
+      "_examResults": [ { "$ref": "E22" } ]
+    },
+    {
+      "$id": "S23",
+      "Id": "00000000-0000-0000-0000-000000000017",
+      "FirstName": "Walter",
+      "FamilyName": "Young",
+      "_courses": [ { "$ref": "C3" } ],
+      "_classRooms": [ { "$ref": "R3" } ],
+      "_examResults": [ { "$ref": "E23" } ]
+    },
+    {
+      "$id": "S24",
+      "Id": "00000000-0000-0000-0000-000000000018",
+      "FirstName": "Xena",
+      "FamilyName": "King",
+      "_courses": [ { "$ref": "C3" } ],
+      "_classRooms": [ { "$ref": "R3" } ],
+      "_examResults": [ { "$ref": "E24" } ]
+    },
+    {
+      "$id": "S25",
+      "Id": "00000000-0000-0000-0000-000000000019",
+      "FirstName": "Yvonne",
+      "FamilyName": "Scott",
+      "_courses": [ { "$ref": "C3" } ],
+      "_classRooms": [ { "$ref": "R3" } ],
+      "_examResults": [ { "$ref": "E25" } ]
+    },
+    {
+      "$id": "S26",
+      "Id": "00000000-0000-0000-0000-00000000001A",
+      "FirstName": "Zachary",
+      "FamilyName": "Adams",
+      "_courses": [ { "$ref": "C3" } ],
+      "_classRooms": [ { "$ref": "R3" } ],
+      "_examResults": [ { "$ref": "E26" } ]
+    },
+    {
+      "$id": "S27",
+      "Id": "00000000-0000-0000-0000-00000000001B",
+      "FirstName": "Aaron",
+      "FamilyName": "Baker",
+      "_courses": [ { "$ref": "C3" } ],
+      "_classRooms": [ { "$ref": "R3" } ],
+      "_examResults": [ { "$ref": "E27" } ]
+    },
+    {
+      "$id": "S28",
+      "Id": "00000000-0000-0000-0000-00000000001C",
+      "FirstName": "Beth",
+      "FamilyName": "Carter",
+      "_courses": [ { "$ref": "C3" } ],
+      "_classRooms": [ { "$ref": "R3" } ],
+      "_examResults": [ { "$ref": "E28" } ]
+    },
+    {
+      "$id": "S29",
+      "Id": "00000000-0000-0000-0000-00000000001D",
+      "FirstName": "Calvin",
+      "FamilyName": "Mitchell",
+      "_courses": [ { "$ref": "C3" } ],
+      "_classRooms": [ { "$ref": "R3" } ],
+      "_examResults": [ { "$ref": "E29" } ]
+    },
+    {
+      "$id": "S30",
+      "Id": "00000000-0000-0000-0000-00000000001E",
+      "FirstName": "Diana",
+      "FamilyName": "Perez",
+      "_courses": [ { "$ref": "C3" } ],
+      "_classRooms": [ { "$ref": "R3" } ],
+      "_examResults": [ { "$ref": "E30" } ]
+    },
+
+    {
+      "$id": "S31",
+      "Id": "00000000-0000-0000-0000-00000000001F",
+      "FirstName": "Ethan",
+      "FamilyName": "Roberts",
+      "_courses": [ { "$ref": "C4" } ],
+      "_classRooms": [ { "$ref": "R4" } ],
+      "_examResults": [ { "$ref": "E31" } ]
+    },
+    {
+      "$id": "S32",
+      "Id": "00000000-0000-0000-0000-000000000020",
+      "FirstName": "Faith",
+      "FamilyName": "Turner",
+      "_courses": [ { "$ref": "C4" } ],
+      "_classRooms": [ { "$ref": "R4" } ],
+      "_examResults": [ { "$ref": "E32" } ]
+    },
+    {
+      "$id": "S33",
+      "Id": "00000000-0000-0000-0000-000000000021",
+      "FirstName": "Gavin",
+      "FamilyName": "Parker",
+      "_courses": [ { "$ref": "C4" } ],
+      "_classRooms": [ { "$ref": "R4" } ],
+      "_examResults": [ { "$ref": "E33" } ]
+    },
+    {
+      "$id": "S34",
+      "Id": "00000000-0000-0000-0000-000000000022",
+      "FirstName": "Hailey",
+      "FamilyName": "Collins",
+      "_courses": [ { "$ref": "C4" } ],
+      "_classRooms": [ { "$ref": "R4" } ],
+      "_examResults": [ { "$ref": "E34" } ]
+    },
+    {
+      "$id": "S35",
+      "Id": "00000000-0000-0000-0000-000000000023",
+      "FirstName": "Isaac",
+      "FamilyName": "Murphy",
+      "_courses": [ { "$ref": "C4" } ],
+      "_classRooms": [ { "$ref": "R4" } ],
+      "_examResults": [ { "$ref": "E35" } ]
+    },
+    {
+      "$id": "S36",
+      "Id": "00000000-0000-0000-0000-000000000024",
+      "FirstName": "Jasmine",
+      "FamilyName": "Rivera",
+      "_courses": [ { "$ref": "C4" } ],
+      "_classRooms": [ { "$ref": "R4" } ],
+      "_examResults": [ { "$ref": "E36" } ]
+    },
+    {
+      "$id": "S37",
+      "Id": "00000000-0000-0000-0000-000000000025",
+      "FirstName": "Kyle",
+      "FamilyName": "Cox",
+      "_courses": [ { "$ref": "C4" } ],
+      "_classRooms": [ { "$ref": "R4" } ],
+      "_examResults": [ { "$ref": "E37" } ]
+    },
+    {
+      "$id": "S38",
+      "Id": "00000000-0000-0000-0000-000000000026",
+      "FirstName": "Lila",
+      "FamilyName": "Ward",
+      "_courses": [ { "$ref": "C4" } ],
+      "_classRooms": [ { "$ref": "R4" } ],
+      "_examResults": [ { "$ref": "E38" } ]
+    },
+    {
+      "$id": "S39",
+      "Id": "00000000-0000-0000-0000-000000000027",
+      "FirstName": "Mason",
+      "FamilyName": "Richardson",
+      "_courses": [ { "$ref": "C4" } ],
+      "_classRooms": [ { "$ref": "R4" } ],
+      "_examResults": [ { "$ref": "E39" } ]
+    },
+    {
+      "$id": "S40",
+      "Id": "00000000-0000-0000-0000-000000000028",
+      "FirstName": "Olivia",
+      "FamilyName": "Price",
+      "_courses": [ { "$ref": "C4" } ],
+      "_classRooms": [ { "$ref": "R4" } ],
+      "_examResults": [ { "$ref": "E40" } ]
+    },
+
+    {
+      "$id": "S41",
+      "Id": "00000000-0000-0000-0000-000000000029",
+      "FirstName": "Paul",
+      "FamilyName": "Sanders",
+      "_courses": [ { "$ref": "C5" } ],
+      "_classRooms": [ { "$ref": "R5" } ],
+      "_examResults": [ { "$ref": "E41" } ]
+    },
+    {
+      "$id": "S42",
+      "Id": "00000000-0000-0000-0000-00000000002A",
+      "FirstName": "Quincy",
+      "FamilyName": "Russell",
+      "_courses": [ { "$ref": "C5" } ],
+      "_classRooms": [ { "$ref": "R5" } ],
+      "_examResults": [ { "$ref": "E42" } ]
+    },
+    {
+      "$id": "S43",
+      "Id": "00000000-0000-0000-0000-00000000002B",
+      "FirstName": "Rita",
+      "FamilyName": "Long",
+      "_courses": [ { "$ref": "C5" } ],
+      "_classRooms": [ { "$ref": "R5" } ],
+      "_examResults": [ { "$ref": "E43" } ]
+    },
+    {
+      "$id": "S44",
+      "Id": "00000000-0000-0000-0000-00000000002C",
+      "FirstName": "Sam",
+      "FamilyName": "Foster",
+      "_courses": [ { "$ref": "C5" } ],
+      "_classRooms": [ { "$ref": "R5" } ],
+      "_examResults": [ { "$ref": "E44" } ]
+    },
+    {
+      "$id": "S45",
+      "Id": "00000000-0000-0000-0000-00000000002D",
+      "FirstName": "Tracy",
+      "FamilyName": "Bryant",
+      "_courses": [ { "$ref": "C5" } ],
+      "_classRooms": [ { "$ref": "R5" } ],
+      "_examResults": [ { "$ref": "E45" } ]
+    },
+    {
+      "$id": "S46",
+      "Id": "00000000-0000-0000-0000-00000000002E",
+      "FirstName": "Uma",
+      "FamilyName": "Kennedy",
+      "_courses": [ { "$ref": "C5" } ],
+      "_classRooms": [ { "$ref": "R5" } ],
+      "_examResults": [ { "$ref": "E46" } ]
+    },
+    {
+      "$id": "S47",
+      "Id": "00000000-0000-0000-0000-00000000002F",
+      "FirstName": "Vince",
+      "FamilyName": "Hayes",
+      "_courses": [ { "$ref": "C5" } ],
+      "_classRooms": [ { "$ref": "R5" } ],
+      "_examResults": [ { "$ref": "E47" } ]
+    },
+    {
+      "$id": "S48",
+      "Id": "00000000-0000-0000-0000-000000000030",
+      "FirstName": "Wendy",
+      "FamilyName": "Ortiz",
+      "_courses": [ { "$ref": "C5" } ],
+      "_classRooms": [ { "$ref": "R5" } ],
+      "_examResults": [ { "$ref": "E48" } ]
+    },
+    {
+      "$id": "S49",
+      "Id": "00000000-0000-0000-0000-000000000031",
+      "FirstName": "Xander",
+      "FamilyName": "Simmons",
+      "_courses": [ { "$ref": "C5" } ],
+      "_classRooms": [ { "$ref": "R5" } ],
+      "_examResults": [ { "$ref": "E49" } ]
+    },
+    {
+      "$id": "S50",
+      "Id": "00000000-0000-0000-0000-000000000032",
+      "FirstName": "Yara",
+      "FamilyName": "Bennett",
+      "_courses": [ { "$ref": "C5" } ],
+      "_classRooms": [ { "$ref": "R5" } ],
+      "_examResults": [ { "$ref": "E50" } ]
+    }
+  ],
+  "_courses": [
+    {
+      "$id": "C1",
+      "Id": "11111111-1111-1111-1111-111111111111",
+      "CourseNumber": null,
+      "Name": "Mathematics",
+      "_classRooms": [
+        {
+          "$id": "R1",
+          "Id": "22222222-2222-2222-2222-222222222222",
+          "Level": 1,
+          "Code": "A",
+          "Course": { "$ref": "C1" },
+          "_students": [
+            { "$ref": "S1" },
+            { "$ref": "S2" },
+            { "$ref": "S3" },
+            { "$ref": "S4" },
+            { "$ref": "S5" },
+            { "$ref": "S6" },
+            { "$ref": "S7" },
+            { "$ref": "S8" },
+            { "$ref": "S9" },
+            { "$ref": "S10" }
+          ],
+          "_examResults": [
+            {
+              "$id": "E1",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R1" },
+              "Student": { "$ref": "S1" }
+            },
+            {
+              "$id": "E2",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R1" },
+              "Student": { "$ref": "S2" }
+            },
+            {
+              "$id": "E3",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R1" },
+              "Student": { "$ref": "S3" }
+            },
+            {
+              "$id": "E4",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R1" },
+              "Student": { "$ref": "S4" }
+            },
+            {
+              "$id": "E5",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R1" },
+              "Student": { "$ref": "S5" }
+            },
+            {
+              "$id": "E6",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R1" },
+              "Student": { "$ref": "S6" }
+            },
+            {
+              "$id": "E7",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R1" },
+              "Student": { "$ref": "S7" }
+            },
+            {
+              "$id": "E8",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R1" },
+              "Student": { "$ref": "S8" }
+            },
+            {
+              "$id": "E9",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R1" },
+              "Student": { "$ref": "S9" }
+            },
+            {
+              "$id": "E10",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R1" },
+              "Student": { "$ref": "S10" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "C2",
+      "Id": "33333333-3333-3333-3333-333333333333",
+      "CourseNumber": null,
+      "Name": "Science",
+      "_classRooms": [
+        {
+          "$id": "R2",
+          "Id": "44444444-4444-4444-4444-444444444444",
+          "Level": 2,
+          "Code": "B",
+          "Course": { "$ref": "C2" },
+          "_students": [
+            { "$ref": "S11" },
+            { "$ref": "S12" },
+            { "$ref": "S13" },
+            { "$ref": "S14" },
+            { "$ref": "S15" },
+            { "$ref": "S16" },
+            { "$ref": "S17" },
+            { "$ref": "S18" },
+            { "$ref": "S19" },
+            { "$ref": "S20" }
+          ],
+          "_examResults": [
+            {
+              "$id": "E11",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R2" },
+              "Student": { "$ref": "S11" }
+            },
+            {
+              "$id": "E12",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R2" },
+              "Student": { "$ref": "S12" }
+            },
+            {
+              "$id": "E13",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R2" },
+              "Student": { "$ref": "S13" }
+            },
+            {
+              "$id": "E14",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R2" },
+              "Student": { "$ref": "S14" }
+            },
+            {
+              "$id": "E15",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R2" },
+              "Student": { "$ref": "S15" }
+            },
+            {
+              "$id": "E16",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R2" },
+              "Student": { "$ref": "S16" }
+            },
+            {
+              "$id": "E17",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R2" },
+              "Student": { "$ref": "S17" }
+            },
+            {
+              "$id": "E18",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R2" },
+              "Student": { "$ref": "S18" }
+            },
+            {
+              "$id": "E19",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R2" },
+              "Student": { "$ref": "S19" }
+            },
+            {
+              "$id": "E20",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R2" },
+              "Student": { "$ref": "S20" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "C3",
+      "Id": "55555555-5555-5555-5555-555555555555",
+      "CourseNumber": null,
+      "Name": "History",
+      "_classRooms": [
+        {
+          "$id": "R3",
+          "Id": "66666666-6666-6666-6666-666666666666",
+          "Level": 3,
+          "Code": "C",
+          "Course": { "$ref": "C3" },
+          "_students": [
+            { "$ref": "S21" },
+            { "$ref": "S22" },
+            { "$ref": "S23" },
+            { "$ref": "S24" },
+            { "$ref": "S25" },
+            { "$ref": "S26" },
+            { "$ref": "S27" },
+            { "$ref": "S28" },
+            { "$ref": "S29" },
+            { "$ref": "S30" }
+          ],
+          "_examResults": [
+            {
+              "$id": "E21",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R3" },
+              "Student": { "$ref": "S21" }
+            },
+            {
+              "$id": "E22",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R3" },
+              "Student": { "$ref": "S22" }
+            },
+            {
+              "$id": "E23",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R3" },
+              "Student": { "$ref": "S23" }
+            },
+            {
+              "$id": "E24",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R3" },
+              "Student": { "$ref": "S24" }
+            },
+            {
+              "$id": "E25",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R3" },
+              "Student": { "$ref": "S25" }
+            },
+            {
+              "$id": "E26",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R3" },
+              "Student": { "$ref": "S26" }
+            },
+            {
+              "$id": "E27",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R3" },
+              "Student": { "$ref": "S27" }
+            },
+            {
+              "$id": "E28",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R3" },
+              "Student": { "$ref": "S28" }
+            },
+            {
+              "$id": "E29",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R3" },
+              "Student": { "$ref": "S29" }
+            },
+            {
+              "$id": "E30",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R3" },
+              "Student": { "$ref": "S30" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "C4",
+      "Id": "77777777-7777-7777-7777-777777777777",
+      "CourseNumber": null,
+      "Name": "Art",
+      "_classRooms": [
+        {
+          "$id": "R4",
+          "Id": "88888888-8888-8888-8888-888888888888",
+          "Level": 1,
+          "Code": "A",
+          "Course": { "$ref": "C4" },
+          "_students": [
+            { "$ref": "S31" },
+            { "$ref": "S32" },
+            { "$ref": "S33" },
+            { "$ref": "S34" },
+            { "$ref": "S35" },
+            { "$ref": "S36" },
+            { "$ref": "S37" },
+            { "$ref": "S38" },
+            { "$ref": "S39" },
+            { "$ref": "S40" }
+          ],
+          "_examResults": [
+            {
+              "$id": "E31",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R4" },
+              "Student": { "$ref": "S31" }
+            },
+            {
+              "$id": "E32",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R4" },
+              "Student": { "$ref": "S32" }
+            },
+            {
+              "$id": "E33",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R4" },
+              "Student": { "$ref": "S33" }
+            },
+            {
+              "$id": "E34",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R4" },
+              "Student": { "$ref": "S34" }
+            },
+            {
+              "$id": "E35",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R4" },
+              "Student": { "$ref": "S35" }
+            },
+            {
+              "$id": "E36",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R4" },
+              "Student": { "$ref": "S36" }
+            },
+            {
+              "$id": "E37",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R4" },
+              "Student": { "$ref": "S37" }
+            },
+            {
+              "$id": "E38",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R4" },
+              "Student": { "$ref": "S38" }
+            },
+            {
+              "$id": "E39",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R4" },
+              "Student": { "$ref": "S39" }
+            },
+            {
+              "$id": "E40",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R4" },
+              "Student": { "$ref": "S40" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$id": "C5",
+      "Id": "99999999-9999-9999-9999-999999999999",
+      "CourseNumber": null,
+      "Name": "Literature",
+      "_classRooms": [
+        {
+          "$id": "R5",
+          "Id": "AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA",
+          "Level": 2,
+          "Code": "B",
+          "Course": { "$ref": "C5" },
+          "_students": [
+            { "$ref": "S41" },
+            { "$ref": "S42" },
+            { "$ref": "S43" },
+            { "$ref": "S44" },
+            { "$ref": "S45" },
+            { "$ref": "S46" },
+            { "$ref": "S47" },
+            { "$ref": "S48" },
+            { "$ref": "S49" },
+            { "$ref": "S50" }
+          ],
+          "_examResults": [
+            {
+              "$id": "E41",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R5" },
+              "Student": { "$ref": "S41" }
+            },
+            {
+              "$id": "E42",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R5" },
+              "Student": { "$ref": "S42" }
+            },
+            {
+              "$id": "E43",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R5" },
+              "Student": { "$ref": "S43" }
+            },
+            {
+              "$id": "E44",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R5" },
+              "Student": { "$ref": "S44" }
+            },
+            {
+              "$id": "E45",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R5" },
+              "Student": { "$ref": "S45" }
+            },
+            {
+              "$id": "E46",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R5" },
+              "Student": { "$ref": "S46" }
+            },
+            {
+              "$id": "E47",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R5" },
+              "Student": { "$ref": "S47" }
+            },
+            {
+              "$id": "E48",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R5" },
+              "Student": { "$ref": "S48" }
+            },
+            {
+              "$id": "E49",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R5" },
+              "Student": { "$ref": "S49" }
+            },
+            {
+              "$id": "E50",
+              "Result": "Inscribed",
+              "ClassRoom": { "$ref": "R5" },
+              "Student": { "$ref": "S50" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
