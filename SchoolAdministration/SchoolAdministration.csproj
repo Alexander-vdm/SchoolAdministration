@@ -8,11 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="DemoFiles\courses.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="DemoFiles\people.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DemoFiles\school.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
